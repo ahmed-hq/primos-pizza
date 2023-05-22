@@ -1,6 +1,7 @@
-
+import createHomePage from './home'
 
 function loadPage(){
+  createHomePage();
 
 }
 
