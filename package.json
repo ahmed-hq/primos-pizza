@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ahmed-hq/primos-pizza/issues"
   },
-  "homepage": "https://github.com/ahmed-hq/primos-pizza#readme"
+  "homepage": "https://github.com/ahmed-hq/primos-pizza#readme",
+  "devDependencies": {
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
 }
