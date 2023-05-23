@@ -1,7 +1,9 @@
+import './images/inside-store.jpg';
+
 const createHomePage = () => {
 
   const image = document.createElement('img');
-  image.src = '../src/images/inside-store.jpg';
+  image.src = './images/inside-store.jpg';
   image.height = '300';
   content.appendChild(image);
 
