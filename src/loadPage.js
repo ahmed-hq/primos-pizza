@@ -7,8 +7,6 @@ function loadPage(){
 
   createTabs();
   createHomePage();
-  createMenus();
-  createContact();
 
 }
 

@@ -1,3 +1,7 @@
+import createHomePage from './home'
+import createMenus from './menus';
+import createContact from './contact';
+
 const createTabs = () => {
   const tabsWrapper = document.createElement('div');
   tabsWrapper.setAttribute('class', 'tabs-wrapper');
@@ -20,17 +24,29 @@ const createTabs = () => {
   tabsWrapper.appendChild(contactTab);
 
   homeTab.addEventListener('click', () => {
-
+    clearPage();
+    createHomePage();
   });
 
-  homeTab.addEventListener('click', () => {
-
+  menuTab.addEventListener('click', () => {
+    clearPage();
+    createMenus();
   });
 
-  homeTab.addEventListener('click', () => {
-
+  contactTab.addEventListener('click', () => {
+    clearPage();
+    createContact();
   });
 
 }
+
+const clearPage = () => {
+  while (content.firstChild){
+    content.removeChild(content.lastChild);
+  }  
+  createTabs()
+}
+
+
 
 export default createTabs;
