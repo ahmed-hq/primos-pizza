@@ -1,7 +1,7 @@
 const createHomePage = () => {
 
   const image = document.createElement('img');
-  image.src = '../src/imgs/inside-store.jpg';
+  image.src = '../src/images/inside-store.jpg';
   image.height = '300';
   content.appendChild(image);
 
